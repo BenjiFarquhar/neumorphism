@@ -1,3 +1,8 @@
+## 3.2.1
+
+* Centered lightsource
+* Mouse cursor click
+
 ## 3.2.0
 
 * Remove generated localization class ([#215](https://github.com/Idean/Flutter-Neumorphic/pull/215))
