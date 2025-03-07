@@ -25,13 +25,11 @@ class LightSource {
   static const bottomRight = const LightSource(1, 1);
   static const left = const LightSource(-1, 0);
   static const right = const LightSource(1, 0);
+  static const center = const LightSource(0, 0);
 
   @override
   bool operator ==(Object other) =>
-      identical(this, other) ||
-      other is LightSource &&
-          runtimeType == other.runtimeType &&
-          offset == other.offset;
+      identical(this, other) || other is LightSource && runtimeType == other.runtimeType && offset == other.offset;
 
   @override
   int get hashCode => offset.hashCode;

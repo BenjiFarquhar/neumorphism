@@ -64,7 +64,6 @@ class NeumorphicButton extends StatefulWidget {
     this.pressed, //true/false if you want to change the state of the button
     this.duration = Neumorphic.DEFAULT_DURATION,
     this.curve = Neumorphic.DEFAULT_CURVE,
-    //this.accent,
     this.onPressed,
     this.minDistance = 0,
     this.style,
@@ -173,38 +172,41 @@ class _NeumorphicButtonState extends State<NeumorphicButton> {
     final appBarPresent = NeumorphicAppBarTheme.of(context) != null;
     final appBarTheme = NeumorphicTheme.currentTheme(context).appBarTheme;
 
-    return GestureDetector(
-      onTapDown: (detail) {
-        hasTapUp = false;
-        if (clickable && !pressed) {
-          _handlePress();
-        }
-      },
-      onTapUp: (details) {
-        if (clickable) {
-          widget.onPressed!();
-        }
-        hasTapUp = true;
-        _resetIfTapUp();
-      },
-      onTapCancel: () {
-        hasTapUp = true;
-        _resetIfTapUp();
-      },
-      child: animationScale.AnimatedScale(
-        scale: _getScale(),
-        child: Neumorphic(
-          margin: widget.margin ?? const EdgeInsets.all(0),
-          drawSurfaceAboveChild: widget.drawSurfaceAboveChild,
-          duration: widget.duration,
-          curve: widget.curve,
-          padding: widget.padding ??
-              (appBarPresent ? appBarTheme.buttonPadding : null) ??
-              const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
-          style: initialStyle.copyWith(
-            depth: _getDepth(),
+    return MouseRegion(
+      cursor: SystemMouseCursors.click,
+      child: GestureDetector(
+        onTapDown: (detail) {
+          hasTapUp = false;
+          if (clickable && !pressed) {
+            _handlePress();
+          }
+        },
+        onTapUp: (details) {
+          if (clickable) {
+            widget.onPressed!();
+          }
+          hasTapUp = true;
+          _resetIfTapUp();
+        },
+        onTapCancel: () {
+          hasTapUp = true;
+          _resetIfTapUp();
+        },
+        child: animationScale.AnimatedScale(
+          scale: _getScale(),
+          child: Neumorphic(
+            margin: widget.margin ?? const EdgeInsets.all(0),
+            drawSurfaceAboveChild: widget.drawSurfaceAboveChild,
+            duration: widget.duration,
+            curve: widget.curve,
+            padding: widget.padding ??
+                (appBarPresent ? appBarTheme.buttonPadding : null) ??
+                const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
+            style: initialStyle.copyWith(
+              depth: _getDepth(),
+            ),
+            child: widget.child,
           ),
-          child: widget.child,
         ),
       ),
     );
