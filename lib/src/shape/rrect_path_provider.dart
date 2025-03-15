@@ -1,4 +1,4 @@
-import '../../flutter_neumorphic.dart';
+import '../../neumorphism.dart';
 
 class RRectPathProvider extends NeumorphicPathProvider {
   final BorderRadius borderRadius;

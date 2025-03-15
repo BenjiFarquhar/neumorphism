@@ -1,4 +1,4 @@
-import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:neumorphism/neumorphism.dart';
 
 class NeumorphicAppBar extends StatefulWidget implements PreferredSizeWidget {
   static const toolbarHeight = kToolbarHeight + 16 * 2;

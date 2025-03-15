@@ -1,7 +1,7 @@
-import 'package:flutter_neumorphic/src/widget/animation/animated_scale.dart'
+import 'package:neumorphism/src/widget/animation/animated_scale.dart'
     as animationScale;
 
-import '../../flutter_neumorphic.dart';
+import '../../neumorphism.dart';
 
 /// A style to customize the [NeumorphicSwitch]
 ///

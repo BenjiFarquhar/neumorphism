@@ -1,4 +1,6 @@
-## 3.2.1
+## 3.2.2
+
+* Rename package to neumorphism
 
 * Centered lightsource
 * Mouse cursor click

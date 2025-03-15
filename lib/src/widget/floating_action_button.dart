@@ -1,4 +1,4 @@
-import '../../flutter_neumorphic.dart';
+import '../../neumorphism.dart';
 
 const BoxConstraints _kSizeConstraints = BoxConstraints.tightFor(
   width: 56.0,

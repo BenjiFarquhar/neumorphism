@@ -1,4 +1,4 @@
-import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:neumorphism/neumorphism.dart';
 
 class NeumorphicCloseButton extends StatelessWidget {
   final VoidCallback? onPressed;

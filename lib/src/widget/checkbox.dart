@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
-import 'package:flutter_neumorphic/src/neumorphic_icons.dart';
-import 'package:flutter_neumorphic/src/widget/container.dart';
+import 'package:neumorphism/src/neumorphic_icons.dart';
+import 'package:neumorphism/src/widget/container.dart';
 
 import 'button.dart';
 

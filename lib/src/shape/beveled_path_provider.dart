@@ -1,4 +1,4 @@
-import '../../flutter_neumorphic.dart';
+import '../../neumorphism.dart';
 import 'dart:math' as math;
 
 class BeveledPathProvider extends NeumorphicPathProvider {

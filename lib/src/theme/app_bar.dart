@@ -1,7 +1,7 @@
 import 'dart:io';
 
 
-import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:neumorphism/neumorphism.dart';
 
 @immutable
 class NeumorphicAppBarThemeData {

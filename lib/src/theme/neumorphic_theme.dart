@@ -1,5 +1,5 @@
 
-import '../../flutter_neumorphic.dart';
+import '../../neumorphism.dart';
 
 export 'inherited_neumorphic_theme.dart';
 export 'theme.dart';

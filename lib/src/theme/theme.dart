@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 
-import '../../flutter_neumorphic.dart';
+import '../../neumorphism.dart';
 
 export '../colors.dart';
 export '../light_source.dart';

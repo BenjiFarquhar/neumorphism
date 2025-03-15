@@ -1,5 +1,5 @@
 
-import '../../flutter_neumorphic.dart';
+import '../../neumorphism.dart';
 
 export '../decoration/neumorphic_decorations.dart';
 export '../neumorphic_box_shape.dart';

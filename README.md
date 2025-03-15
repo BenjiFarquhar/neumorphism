@@ -1,4 +1,4 @@
-# flutter_neumorphic
+# neumorphism
 
 A complete, ready to use, Neumorphic ui kit for Flutter
 
@@ -10,23 +10,23 @@ Try Flutter-Neumorphic on your browser : 👉 https://flutter-neumorphic.firebas
 
 # ⚙️ Installation
 
-https://pub.dev/packages/flutter_neumorphic
+https://pub.dev/packages/neumorphism
 
-[![pub package](https://img.shields.io/pub/v/flutter_neumorphic.svg)](
-https://pub.dartlang.org/packages/flutter_neumorphic)
+[![pub package](https://img.shields.io/pub/v/neumorphism.svg)](
+https://pub.dartlang.org/packages/neumorphism)
 [![pub package](https://api.codemagic.io/apps/5e6113f78b547c3c80edbdb3/5e6113f78b547c3c80edbdb2/status_badge.svg)](https://github.com/Idean/Flutter-Neumorphic)
 
 
 ```dart
 dependencies:
-  flutter_neumorphic: ^3.0.3
+  neumorphism: ^3.0.3
 
 //requires flutter > 1.13.18
 ```
 
 The in your .dart files 
 ```dart
-import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:neumorphism/neumorphism.dart';
 ```
 
 # 🗂 Widgets

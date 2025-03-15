@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import '../../../flutter_neumorphic.dart';
+import '../../../neumorphism.dart';
 
 abstract class AbstractNeumorphicEmbossPainterCache {
   Offset? _cacheOffset;
